@@ -5,4 +5,7 @@ Note taking is a very good habit to organize our daily life. This is an online a
 
 # Group Member
 
-  Kierra Nelson (Leader), Sevim Guloglu, Max Simpson, Kyle Ahn
+  * Kierra Nelson (Leader) 
+  * Sevim Guloglu
+  * Max Simpson
+  * Kyle Ahn
