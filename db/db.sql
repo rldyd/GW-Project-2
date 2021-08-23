@@ -1,0 +1,2 @@
+CREATE DATABASE pets;
+USE pets;
