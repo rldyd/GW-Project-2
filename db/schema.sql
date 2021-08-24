@@ -1,6 +1,4 @@
-CREATE TABLE Pet_Table (
-    id INTEGER PRIMARY KEY,
-    pet_name VARCHAR(20)
-    pet_age INTEGER
-    
-)
+DROP DATABASE IF EXISTS petfinder_db;
+
+-- CREATE DATABASE
+CREATE DATABASE petfinder_db;
