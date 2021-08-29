@@ -1,15 +1,10 @@
 {
-<<<<<<< HEAD
   "name": "project-2",
-=======
-  "name": "gw-project-2",
->>>>>>> d0d0773fc723ee46c8916c42f54c04bbb8708e6d
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
@@ -21,26 +16,5 @@
     "express": "^4.17.1",
     "mysql2": "^2.3.0",
     "sequelize": "^6.6.5"
-=======
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/knels11/GW-Project-2.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/knels11/GW-Project-2/issues"
-  },
-  "homepage": "https://github.com/knels11/GW-Project-2#readme",
-  "keywords": [],
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql2": "^2.3.0"
-  },
-  "devDependencies": {
-    "jest": "^27.0.6"
->>>>>>> d0d0773fc723ee46c8916c42f54c04bbb8708e6d
   }
 }
