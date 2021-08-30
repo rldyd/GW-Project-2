@@ -1,8 +1,9 @@
 
 const express = require('express');
 const routes = require('./routes');
-const fs = require('fs');
 const path = require('path');
+const exphbs = require('express-handlebars');
+
 // import sequelize connection
 const sequelize = require('./config/connection');
 
@@ -11,6 +12,11 @@ const app = express();
 // const path = require('path');
 // const { Sequelize } = require('sequelize');
 
+
+app.engine("handlebars", hbs.engine);
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
 // // Option 2: Passing parameters separately (other dialects)
 // const sequelize = new Sequelize('pets', 'username', 'password', {
@@ -50,4 +56,4 @@ const app = express();
 //   console.log("===========================");
 //   app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
 // });
-// >>>>>>> main
+// 
