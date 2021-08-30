@@ -40,14 +40,14 @@ router.put('/:id', (req, res) => {
             id: req.params.id
         }
     })
-    .then(dbPet => {
-        if(!dbPet) {
-            res.status(404).json({ message: " No pet found "});
-            return;
-        }
-        res.json(dbPet);
-    })
-    .catch((err) => res.status(500).json(err));
+        .then(dbPet => {
+            if (!dbPet) {
+                res.status(404).json({ message: " No pet found " });
+                return;
+            }
+            res.json(dbPet);
+        })
+        .catch((err) => res.status(500).json(err));
 });
 
 // Delete a name
@@ -57,14 +57,14 @@ router.delete('/:id', (req, res) => {
             id: req.params.id
         }
     })
-    .then(dbPet => {
-        if(!dbPet) {
-            res.status(404).json({ message: " No pet found with this id "});
-            return;
-        }
-        res.json(dbPet);
-    })
-    .catch((err) => res.status(500).json(err));
+        .then(dbPet => {
+            if (!dbPet) {
+                res.status(404).json({ message: " No pet found with this id " });
+                return;
+            }
+            res.json(dbPet);
+        })
+        .catch((err) => res.status(500).json(err));
 });
 
 module.exports = router;
