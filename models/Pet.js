@@ -14,9 +14,9 @@ Pet.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
-    }
-  },
-  {
+      primaryKey: true,
+    },
+    
     pet_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -24,26 +24,22 @@ Pet.init(
         len: [2, 16]
       }
     },
-  },
-  {
+
     pet_age: {
       type: DataTypes.INTEGER,
       allowNull: false,
-    }
-  },
-  {
+    },
+
     pet_compatability: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
-  },
-  {
+    },
+
     pet_type: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
-  },
-  {
+    },
+ 
     pet_health: {
       type: DataTypes.STRING,
       allowNull: false,
