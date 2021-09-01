@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 // import sequelize connection
 const sequelize = require('./config/connection');
-const sequelizeStore = require('connect-session-sequelize')(seesion.Store);
+// const sequelizeStore = require('connect-session-sequelize')(seesion.Store);
 
 //app.engine("handlebars", hbs.engine);
 app.use(express.json());
