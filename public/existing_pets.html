@@ -9,13 +9,37 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> My Pets </title>
 </head>
 
 <body>
     <div>
-        <h1>Pet Profiles:</h1>
+        <table>
+        <thead><h1 class="center-align"> Pet Profiles: </h1>
+            <tr id="petStatus">
+                <th><h4> Name </h4> </th>
+                <th><h4> Type </h4></th>
+                <th><h4> Age </h4></th>
+                <th><h4> Health </h4></th>
+                <th><h4>Compatible With </h4></th>
+            </tr>
+        </thead>
+        <tbody id="petProfile">
+            <tr>
+                <td id="name"> "jj" </td>
+                <td id="type"> "cat" </td>
+                <td id="age"> "1yo" </td>
+                <td id="health"> "overweight" </td>
+                <td id="compatability"> "kids, family, dogs" </td>
+                <td id="pictures"> <a href="./pet_questions.html"></a></td>
+            </tr>
+        </tbody>
+    </table>
     </div>
+
+
+
+
     <div class="divider"></div>
     <div class="section">
         <h1>Pet #1</h1>
@@ -39,6 +63,7 @@
         <h2>Age:</h2>
         <h2>Name:</h2>
         <h2>Health:</h2>
+    
     </div>
 </body>
 </html>
