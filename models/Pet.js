@@ -16,7 +16,7 @@ Pet.init(
       autoIncrement: true,
       primaryKey: true,
     },
-    
+
     pet_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -39,7 +39,7 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
- 
+
     pet_health: {
       type: DataTypes.STRING,
       allowNull: false,
