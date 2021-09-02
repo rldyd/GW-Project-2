@@ -30,10 +30,10 @@ Pet.init(
       allowNull: false,
     },
 
-    pet_compatability: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // pet_compatability: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
 
     pet_type: {
       type: DataTypes.STRING,
