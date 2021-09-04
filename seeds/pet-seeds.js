@@ -6,7 +6,7 @@ const petData = [
         //id: 1,
         pet_name: "fido",
         pet_age: 2,
-        pet_compatatibility: "very compatible",
+        //pet_compatatibility: "very compatible",
         pet_type: "dog",
         pet_health: "very good",
 
@@ -15,7 +15,7 @@ const petData = [
         //id: 2,
         pet_name: "rex",
         pet_age: 2,
-        pet_compatatibility: "very compatible",
+        //pet_compatatibility: "very compatible",
         pet_type: "dog",
         pet_health: "very good",
 
