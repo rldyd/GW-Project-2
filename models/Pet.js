@@ -10,12 +10,12 @@ class Pet extends Model { }
 // set up fields and rules for Health model
 Pet.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   autoIncrement: true,
-    //   primaryKey: true,
-    // },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+    },
 
     pet_name: {
       type: DataTypes.STRING,
@@ -30,10 +30,10 @@ Pet.init(
       allowNull: false,
     },
 
-    pet_compatability: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // pet_compatability: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
 
     pet_type: {
       type: DataTypes.STRING,
