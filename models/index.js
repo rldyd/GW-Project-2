@@ -4,8 +4,13 @@ const Pet = require('./Pet');
 const User = require('./User');
 
 // create associations
-Pet.belongsTo(User);
+User.hasMany(Pet, {
+    foreignKey: "user_id",
+  });
+  
+  Pet.belongsTo(User, {
+    foreignKey: "user_id",
+    onDelete: "SET NULL",
+  });
 
-User.hasMany(Pet);
-
-module.exports = { Pet, User };
+module.exports = { User, Pet };
