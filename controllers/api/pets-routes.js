@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const db = require('../../models');
+const withAuth = require("../../utils/auth")
+const { User, Pet } = require("../../models")
 
 
 // The '/api/name' endpoint
@@ -25,12 +27,21 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// Create a new name
-router.post('/', (req, res) => {
-    db.Pet.create(req.body).then(dbPet => {
-        res.json(dbPet);
-    });
-});
+// Create a new pet
+router.post("/", withAuth, (req, res) => {
+    Pet.create({
+      pet_name: req.body.pet_name,
+      pet_age: req.body.pet_age,
+      pet_type: req.body.pet_type,
+      pet_health: req.body.pet_health,
+      user_id: req.session.user_id,
+    })
+      .then((dbPostData) => res.json(dbPostData))
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
 
 
 // Update a name by its 'id' value
