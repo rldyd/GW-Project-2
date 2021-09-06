@@ -20,20 +20,32 @@
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
+
+<ol class="pets-list">
+  {{#each pets as |pet|}}
+  <li>
+    {{> pet-info pet }}
+  </li>
+  {{/each}}
+</ol>
+
+
 </section>
 
-{{#if posts.length}}
+{{!-- {{#if pets.length}}
 <section>
-  <h2>Your Posts</h2>
+  <h2>Your Pets</h2>
   <ol>
-    {{#each posts as |post|}}
+    {{#each pets as |pets|}}
     <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      {{> pet-info pet}}
+      <a href="/dashboard/edit/{{pet.id}}" class="edit-link">Edit pet</a>
     </li>
     {{/each}}
   </ol>
 </section>
-{{/if}}
+{{/if}} --}}
+
+
 
 <script src="/javascript/add-pet.js"></script>
