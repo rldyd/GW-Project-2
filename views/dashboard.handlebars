@@ -1,22 +1,22 @@
 <section>
   <h2>Add New Pet</h2>
 
-  <form class="new-post-form">
+  <form class="new-pet-form">
     <div>
       <label for="pet-name">Pet Name</label>
       <input type="text" id="pet-name" name="pet-name" />
     </div>
     <div>
       <label for="pet-age">Pet Age</label>
-      <input id="pet-age" name="pet-age" />
+      <input type="text" id="pet-age" name="pet-age" />
     </div>
-     <div>
+    <div>
       <label for="pet-type">Pet Type</label>
-      <input id="pet-type" name="pet-type"/>
+      <input type="text" id="pet-type" name="pet-type" />
     </div>
-     <div>
+    <div>
       <label for="pet-health">Pet Health</label>
-      <input id="pet-health" name="pet-health" />
+      <input type="text" id="pet-health" name="pet-health" />
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
@@ -38,16 +38,8 @@
   <ol>
     {{#each pets as |pets|}}
     <li>
-      {{> post-info post}}
-      <p>Name of Pet:  <b>{{pet_name}}</b></p>
-      <p>Age of Pet:  <b>{{pet_age}}</b>{{pet_age}}</p>
-      <p>Type of Pet:  <b>{{pet_type}}</b></p>
-      <p>Health of Pet:  <b>{{pet_health}}</b></p>
-      
-
-      {{!-- <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit pets</a> --}}
-
-
+      {{> pet-info pet}}
+      <a href="/dashboard/edit/{{pet.id}}" class="edit-link">Edit pet</a>
     </li>
     {{/each}}
   </ol>
@@ -56,4 +48,4 @@
 
 
 
-<script src="/javascript/add-post.js"></script>
+<script src="/javascript/add-pet.js"></script>
