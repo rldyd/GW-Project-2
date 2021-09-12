@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  background-color: bisque;
 }
 
 body,
@@ -7,7 +8,7 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Times New Roman';
   color: #2422a3;
   background-color: rgb(240, 237, 253);
 }
