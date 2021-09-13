@@ -1,0 +1,43 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Pet
+  </h2>
+  <form class="edit-post-form">
+      <div>
+      <input name="pet-name" type="text" value="{{post.pet_name}}" />
+      </div>
+      <div>
+      <input name="pet-age" type="text" value="{{post.pet_age}}" />
+      </div>
+      <div>
+      <input name="pet-type" type="text" value="{{post.pet_type}}" />
+      </div>
+      <div>
+      <input name="pet-health" type="text" value="{{post.pet_health}}" />
+      </div>
+    {{!-- <div>
+      
+      |
+      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+    </div> --}}
+    <button type="submit">Save pet</button>
+    <button type="button" class="delete-post-btn">Delete pet</button>
+  </form>
+</article>
+
+{{!-- <form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+
+{{> comments post.comments}} --}}
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

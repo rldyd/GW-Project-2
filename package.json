@@ -1,24 +1,25 @@
 {
-  "name": "GW-Project-2",
+  "name": "my-tech-blog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "start": "node server"
+  },
+  "engines": {
+    "node": "10.16.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knels11/GW-Project-2.git"
+    "url": "git+https://github.com/anidino/my-tech-blog.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/knels11/GW-Project-2/issues"
+    "url": "https://github.com/anidino/my-tech-blog/issues"
   },
-  "homepage": "https://github.com/knels11/GW-Project-2#readme",
+  "homepage": "https://github.com/anidino/my-tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
