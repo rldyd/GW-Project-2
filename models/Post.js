@@ -2,22 +2,22 @@ const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 // create our Post model
 class Pet extends Model {
-  static upvote(body, models) {
-    return models.Vote.create({
-      user_id: body.user_id
-    }).then(() => {
-      return Pet.findOne({
-        where: {
-          id: body.user_id,
-        },
-        attributes: ["id", "pet_name", "pet_age", "pet_type", "pet_health"],
-        include: {
-          model: models.User,
-          attributes: ["username"],
-        },
-      });
-    });
-  }
+  // static upvote(body, models) {
+  //   return models.Vote.create({
+  //     user_id: body.user_id
+  //   }).then(() => {
+  //     return Pet.findOne({
+  //       where: {
+  //         id: body.user_id,
+  //       },
+  //       attributes: ["id", "pet_name", "pet_age", "pet_type", "pet_health"],
+  //       include: {
+  //         model: models.User,
+  //         attributes: ["username"],
+  //       },
+  //     });
+  //   });
+  // }
 }
 
 // create fields/columns for Post model
