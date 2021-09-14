@@ -52,7 +52,7 @@ router.post("/", withAuth, (req, res) => {
     pet_name: req.body.pet_name,
     pet_age: req.body.pet_age,
     pet_type: req.body.pet_type,
-    pet_health: req.body.pet_type,
+    pet_health: req.body.pet_health,
     user_id: req.session.user_id,
   })
     .then((dbPostData) => res.json(dbPostData))
