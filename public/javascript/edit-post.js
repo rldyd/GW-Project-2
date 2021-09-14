@@ -1,6 +1,10 @@
 async function editFormHandler(event) {
   event.preventDefault();
 
+  // var test = function () {
+  //   console.log('button is working');
+  // }
+
   const pet_name = document.querySelector('input[name="pet-name"]').value.trim();
   const pet_age = document.querySelector('input[name="pet-age"]').value.trim();
   const pet_type = document.querySelector('input[name="pet-type"]').value.trim();
@@ -34,6 +38,11 @@ async function editFormHandler(event) {
   } else {
     alert(response.statusText);
   }
+
+  console.log(pet_name);
+  console.log(pet_age);
+  console.log(pet_type);
+  console.log(pet_health);
 }
 
 document
