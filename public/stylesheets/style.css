@@ -189,4 +189,6 @@ footer {
 
 .wrapper {
   background-image: url(../img/shutterstock_1050239354.jpeg);
+  padding: 3%;
+  border-radius: 12%;
 }

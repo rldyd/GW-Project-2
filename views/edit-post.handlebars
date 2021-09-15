@@ -4,21 +4,29 @@
     Edit Pet
   </h2>
   <form class="edit-post-form">
-      <div>
-      <input name="pet-name" type="text" value="{{post.pet_name}}" />
+      <div class="control">
+      <input class="input is-rounded" name="pet-name" type="text" placeholder="rounded input" value="{{post.pet_name}}" />
       </div>
-      <div>
-      <input name="pet-age" type="text" value="{{post.pet_age}}" />
+      <div class="control">
+      <input class="input is-rounded" name="pet-age" type="text" placeholder="rounded input" value="{{post.pet_age}}" />
       </div>
-      <div>
-      <input name="pet-type" type="text" value="{{post.pet_type}}" />
+      <div class="control">
+      <input class="input is-rounded" name="pet-type" type="text" placeholder="rounded input" value="{{post.pet_type}}" />
       </div>
-      <div>
-      <input name="pet-health" type="text" value="{{post.pet_health}}" />
+      <div class="control">
+      <input class="input is-rounded" name="pet-health" type="text" placeholder="rounded input" value="{{post.pet_health}}" />
       </div>
 
-    <button type="submit">Save pet</button>
-    <button type="button" class="delete-post-btn">Delete pet</button>
+    <button class="button is-success" type="submit"> <span class="icon is-small">
+      <i class="fas fa-check"></i>
+    </span> <span> Save Pet </span>
+    </button>
+
+    <button class="button is-danger is-outlined" type="button" id="delete-post-btn">
+      <span> Delete Pet </span> 
+      <span class="icon is-small"> 
+        <i class="fab fa-times"></i>
+      </span> </button>
   </form>
 </article>
 
