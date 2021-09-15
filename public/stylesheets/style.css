@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: bisque;
+  background-color: light gray;
 }
 
 body,
@@ -8,7 +8,7 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   color: #2422a3;
   background-color: rgb(240, 237, 253);
 }
