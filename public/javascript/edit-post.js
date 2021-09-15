@@ -1,10 +1,19 @@
 async function editFormHandler(event) {
   event.preventDefault();
 
+  // var test = function () {
+  //   console.log('button is working');
+  // }
+
   const pet_name = document.querySelector('input[name="pet-name"]').value.trim();
   const pet_age = document.querySelector('input[name="pet-age"]').value.trim();
   const pet_type = document.querySelector('input[name="pet-type"]').value.trim();
   const pet_health = document.querySelector('input[name="pet-health"]').value.trim();
+
+  console.log(pet_name);
+  console.log(pet_age);
+  console.log(pet_type);
+  console.log(pet_health);
 
 
 
@@ -17,7 +26,7 @@ async function editFormHandler(event) {
       pet_name,
       pet_age,
       pet_type,
-      peet_health,
+      pet_health,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -29,6 +38,11 @@ async function editFormHandler(event) {
   } else {
     alert(response.statusText);
   }
+
+  console.log(pet_name);
+  console.log(pet_age);
+  console.log(pet_type);
+  console.log(pet_health);
 }
 
 document
