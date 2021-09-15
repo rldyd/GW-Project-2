@@ -70,6 +70,14 @@ form label {
   display: block;
 }
 
+form input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -116,10 +124,15 @@ main {
 
 .delete-post-btn {
   background-color: #ff004c;
+  border-radius: 17%;
 }
 
 .delete-post-btn:hover {
   background-color: #fa00d9;
+}
+
+.logout button{
+  border-radius: 17%;
 }
 
 .post {
@@ -166,6 +179,7 @@ main {
 }
 
 footer {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
