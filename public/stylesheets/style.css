@@ -1,4 +1,4 @@
-/* * {
+* {
   box-sizing: border-box;
   background-color: light gray;
 }
@@ -10,15 +10,14 @@ html {
   margin: 0%;
   font-family: "Times New Roman";
   color: #2422a3;
-  background-color: rgb(240, 237, 253);
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
 
-
-  background-image: url("../img/shutterstock_1050239354.jpeg");
+  /* background-image: url("../img/shutterstock_1050239354.jpeg");
   background-size: cover;
-  background-repeat: no-repeat;
-} */
+  background-repeat: no-repeat; */
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +30,7 @@ body {
   background: linear-gradient(120deg, #2980b9, #8e44ad);
   height: 100vh;
   overflow: hidden;
-}
+} */
 
 a {
   text-decoration: none;
