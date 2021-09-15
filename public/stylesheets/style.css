@@ -186,3 +186,7 @@ footer {
   padding: 1%;
   font-size: 110%;
 }
+
+.wrapper {
+  background-image: url(../img/shutterstock_1050239354.jpeg);
+}
