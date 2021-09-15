@@ -131,7 +131,7 @@ main {
   background-color: #fa00d9;
 }
 
-.logout button{
+.logout button {
   border-radius: 17%;
 }
 
@@ -179,7 +179,7 @@ main {
 }
 
 footer {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
