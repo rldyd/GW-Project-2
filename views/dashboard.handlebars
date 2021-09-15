@@ -24,6 +24,7 @@
 
 {{#if posts.length}}
 <section>
+  <div class="columns is-mobile is-centered">
   <h2>Your Pets</h2>
   <ol>
     {{#each posts as |post|}}
@@ -33,7 +34,7 @@
       <p>Age  of Pet:  <b>{{pet_age}}</b></p>
       <p>Type of Pet:  <b>{{pet_type}}</b></p>
       <p>Health of Pet:  <b>{{pet_health}}</b></p>
-      
+      </div>
 
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit pets</a>
 
