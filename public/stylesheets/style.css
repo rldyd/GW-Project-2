@@ -37,6 +37,7 @@ a {
   color: #2422a3;
   font-weight: bold;
   transition: color 0.1s;
+  font-size: 50px;
 }
 
 a:hover {

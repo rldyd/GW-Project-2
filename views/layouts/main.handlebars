@@ -19,14 +19,12 @@
       <h1>
         <a href="/">Pet Findr</a>
       </h1>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
         {{#if loggedIn}}
         <a class="navbar-item" href="/dashboard">Dashboard</a>
         <button id="logout" class="btn-no-style">Log Out</button>
         {{else}}
         <a role="button" class="button is-primary" href="/login">Login</a>
         {{/if}}
-      </nav>
     </header>
     <main>
       {{{ body }}}
