@@ -8,9 +8,13 @@
 <img width="1426" alt="Screen Shot 2021-09-18 at 11 05 14 AM" src="https://user-images.githubusercontent.com/84109630/133893366-51e64c52-9353-4911-bf29-a40e5ee12fae.png">
 
 
-
 # GROUP @6 Members
 * Kierra 
 * Sevim
 * Max
 * Kyle
+
+
+# My Portfolio
+
+* https://rldyd.github.io/Challenge_week_2/
