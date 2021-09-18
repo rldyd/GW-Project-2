@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: light gray;
+  /* background-color: light gray; */
 }
 
 body,
@@ -167,7 +167,8 @@ main {
 
 .edit-link {
   display: block;
-  margin: -1.5% 0 2% 0;
+  margin: 0% 0 2% 0;
+  font-size: large;
 }
 
 .comment-form {
@@ -202,13 +203,16 @@ footer {
   border-top: 1px solid #ccc;
   display: flex;
 
-  /* put color by Kyle*/
   color: white;
 
   justify-content: center;
-  padding: 0;
+  padding: 2;
   font-size: 110%;
 }
+
+/* .homepage h1 {
+  text-align: center;
+} */
 
 /* .wrapper {
   background-image: url(../img/shutterstock_1050239354.jpeg);
